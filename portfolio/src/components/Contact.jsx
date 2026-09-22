@@ -18,12 +18,12 @@ export default function Contact() {
           </span>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-wrap justify-center items-center gap-4">
           <a
             href="mailto:varnapriya2659@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3.5 bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 font-bold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-teal-500/20 active:scale-95"
+            className="px-8 py-4 glass-panel text-slate-100 font-bold rounded-xl hover:bg-slate-800/60 transition-all active:scale-95 border border-slate-700/80 bg-slate-900/60"
           >
             Send Email
           </a>
@@ -32,16 +32,16 @@ export default function Contact() {
             href="https://github.com/varna-priya"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3.5 border border-slate-700 bg-slate-800/80 text-slate-200 font-bold rounded-xl hover:bg-slate-700 transition-all active:scale-95"
+            className="px-8 py-4 glass-panel text-slate-100 font-bold rounded-xl hover:bg-slate-800/60 transition-all active:scale-95 border border-slate-700/80 bg-slate-900/60"
           >
             GitHub Profile
           </a>
 
           <a
-            href="https://www.linkedin.com/in/varnapriya-k-a72021295/"
+            href="https://www.linkedin.com/in/varnapriya-k"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3.5 border border-slate-700 bg-blue-600/20 text-blue-300 border-blue-500/40 font-bold rounded-xl hover:bg-blue-600/30 transition-all active:scale-95"
+            className="px-8 py-4 glass-panel text-slate-100 font-bold rounded-xl hover:bg-slate-800/60 transition-all active:scale-95 border border-slate-700/80 bg-slate-900/60"
           >
             LinkedIn Profile
           </a>
