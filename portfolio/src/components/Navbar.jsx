@@ -4,9 +4,12 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 px-6 py-5">
       <div className="max-w-6xl mx-auto glass-panel rounded-2xl px-8 py-4 flex justify-between items-center">
-        <a href="#hero" className="text-xl font-extrabold tracking-tight text-white flex items-center gap-3">
-          <span className="w-3 h-3 rounded-full bg-blue-500 animate-pulse" />
-          Varnapriya K
+        <a href="#about" className="text-xl font-extrabold tracking-tight text-white flex items-center gap-3">
+          {/* Circular VK Initials Badge */}
+          <div className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-md shadow-blue-500/30 border border-blue-400/30">
+            VK
+          </div>
+          <span>Varnapriya K</span>
         </a>
         
         <nav className="hidden md:flex items-center gap-10 text-base font-semibold text-slate-200">
