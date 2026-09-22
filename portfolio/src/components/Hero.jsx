@@ -35,11 +35,13 @@ export default function Hero() {
   ];
 
   return (
-    <section id="hero" className="py-12 px-6 max-w-6xl mx-auto min-h-[80vh] flex items-center">
+    /* pt-28 (top padding) ensures content sits comfortably below the fixed navbar */
+    <section id="hero" className="pt-28 pb-12 px-6 max-w-6xl mx-auto min-h-[85vh] flex items-center">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         
-        {/* Left Column: Heading, Bio, and Primary CTAs */}
+        {/* Left Column: Bio & Title */}
         <div className="lg:col-span-7 text-left">
+          
           {/* Availability Pill */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 mb-4">
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
@@ -59,7 +61,7 @@ export default function Hero() {
             Software engineer skilled in React interfaces, Java Spring Boot REST APIs, relational databases, and integrating computer vision pipelines into production software.
           </p>
 
-          {/* CTA Buttons */}
+          {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3">
             <a
               href="#projects"
@@ -77,7 +79,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column: Link Cards */}
+        {/* Right Column: Contact Cards */}
         <div className="lg:col-span-5 flex flex-col gap-3">
           <div className="text-xs font-semibold text-slate-400 tracking-wider uppercase mb-1 text-left">
             Find me on

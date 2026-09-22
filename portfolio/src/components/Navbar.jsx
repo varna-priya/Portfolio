@@ -1,33 +1,50 @@
 import React from 'react';
 
 export default function Navbar() {
+  const navItems = [
+    { label: 'About', href: '#about' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact', href: '#contact' },
+  ];
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 px-6 py-5">
-      <div className="max-w-6xl mx-auto glass-panel rounded-2xl px-8 py-4 flex justify-between items-center">
-        <a href="#about" className="text-xl font-extrabold tracking-tight text-white flex items-center gap-3">
-          {/* Circular VK Initials Badge */}
-          <div className="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shadow-md shadow-blue-500/30 border border-blue-400/30">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/60">
+      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        
+        {/* Brand Badge */}
+        <a href="#hero" className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-lg bg-teal-500/10 border border-teal-500/30 flex items-center justify-center font-extrabold text-teal-400 text-sm">
             VK
           </div>
-          <span>Varnapriya K</span>
+          <span className="font-bold text-slate-100 text-sm tracking-wide hidden sm:inline-block">
+            Varnapriya K
+          </span>
         </a>
-        
-        <nav className="hidden md:flex items-center gap-10 text-base font-semibold text-slate-200">
-          <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
-          <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
-          <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
-          <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
-        </nav>
 
-        <a 
-          href="https://github.com/varna-priya" 
-          target="_blank" 
-          rel="noreferrer" 
-          className="px-5 py-2 text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-all shadow-md shadow-blue-500/20"
-        >
-          GitHub
-        </a>
+        {/* Navigation Links */}
+        <div className="flex items-center gap-6">
+          {navItems.map((item, idx) => (
+            <a
+              key={idx}
+              href={item.href}
+              className="text-sm font-semibold text-slate-300 hover:text-teal-400 transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
+          
+          <a
+            href="https://github.com/varna-priya"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-3.5 py-1.5 rounded-lg bg-teal-500 text-slate-950 font-bold text-xs hover:bg-teal-400 transition-colors"
+          >
+            GitHub
+          </a>
+        </div>
+
       </div>
-    </header>
+    </nav>
   );
 }
