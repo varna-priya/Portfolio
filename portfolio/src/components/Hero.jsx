@@ -35,7 +35,7 @@ export default function Hero() {
   ];
 
   return (
-    <section id="about" className="py-12 px-6 max-w-6xl mx-auto min-h-[80vh] flex items-center">
+    <section id="hero" className="py-12 px-6 max-w-6xl mx-auto min-h-[80vh] flex items-center">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         
         {/* Left Column: Heading, Bio, and Primary CTAs */}
@@ -44,19 +44,19 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 mb-4">
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
             <span className="text-xs font-semibold text-slate-300">
-              AI & Deep Learning Engineer • Open to Opportunities
+              Software & AI Engineer • Open to Opportunities
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight leading-snug mb-4">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">Varnapriya.</span><br />
-            I build AI models that actually scale and perform.
+            I build intelligent AI models and full-stack web systems.
           </h1>
 
           {/* Subtitle Bio */}
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6 max-w-lg">
-            Final-year Electronics & Instrumentation undergrad specializing in Computer Vision, ResNet-50 feature extraction, and full-stack integration with Spring Boot & React.
+            Software engineer specializing in Computer Vision, ResNet-50 deep learning pipelines, Spring Boot REST APIs, and modern React user interfaces.
           </p>
 
           {/* CTA Buttons */}
