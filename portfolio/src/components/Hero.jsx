@@ -1,39 +1,49 @@
-import React from 'react';
-
 export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen bg-slate-950 text-white flex items-center justify-center px-6 pt-28 pb-16 overflow-hidden">
-      {/* Glow Effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:24px_24px] opacity-40" />
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none" />
+    <section className="min-h-[85vh] flex items-center justify-center pt-24 pb-12 px-6">
+      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Left Column: Text & Intro */}
+        <div className="lg:col-span-7 space-y-6 text-left">
+          <div className="inline-block px-4 py-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 text-teal-300 text-sm font-medium tracking-wide">
+            AI & Deep Learning Engineer
+          </div>
+          
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-100 tracking-tight leading-tight">
+            Hi, I'm <span className="bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">Varnapriya K</span>
+          </h1>
 
-      <div className="relative z-10 max-w-5xl text-center">
-        <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-purple-400 text-sm font-mono mb-8">
-          <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-          Available for AI & Software Engineering Roles
+          <p className="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal max-w-2xl">
+            Undergraduate Engineering student specializing in Deep Learning, Computer Vision, and full-stack software development. Passionate about building high-performance AI architectures and scalable systems.
+          </p>
+
+          <div className="flex flex-wrap gap-4 pt-4">
+            <a
+              href="#projects"
+              className="px-6 py-3.5 bg-gradient-to-r from-teal-500 to-cyan-500 text-slate-950 font-semibold rounded-xl hover:opacity-90 transition-all shadow-lg shadow-teal-500/20 active:scale-95"
+            >
+              View Featured Work
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3.5 border border-slate-700 bg-slate-900/60 text-slate-200 font-semibold rounded-xl hover:bg-slate-800 transition-all active:scale-95"
+            >
+              Get In Touch
+            </a>
+          </div>
         </div>
 
-        <h1 className="text-6xl sm:text-8xl font-black tracking-tight text-white mb-6 leading-tight">
-          Building Intelligent Systems & <span className="gradient-text">AI Solutions</span>
-        </h1>
-
-        <p className="text-slate-300 text-xl sm:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed font-normal">
-          Hi, I'm <strong className="text-white font-semibold">Varnapriya K</strong>. An Engineer passionate about <span className="text-purple-400 font-medium">Artificial Intelligence, Computer Vision, and Deep Learning</span>, combined with strong foundations in Java, Spring Boot, and Web Applications.
-        </p>
-
-        <div className="flex flex-wrap justify-center gap-5">
-          <a
-            href="#projects"
-            className="px-9 py-4 text-lg bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-bold rounded-xl transition-all shadow-xl shadow-purple-600/25 active:scale-95"
-          >
-            Explore AI & Work
-          </a>
-          <a
-            href="#contact"
-            className="px-9 py-4 text-lg glass-panel text-slate-100 font-bold rounded-xl hover:bg-slate-800/60 transition-all active:scale-95"
-          >
-            Get In Touch
-          </a>
+        {/* Right Column: Professional Profile Image */}
+        <div className="lg:col-span-5 flex justify-center">
+          <div className="relative group w-64 h-64 sm:w-80 sm:h-80">
+            <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-slate-700/80 bg-slate-900">
+              <img
+                src="/profile.jpeg"
+                alt="Varnapriya K"
+                className="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
