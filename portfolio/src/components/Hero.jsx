@@ -35,13 +35,13 @@ export default function Hero() {
   ];
 
   return (
-    <section id="about" className="py-16 px-6 max-w-6xl mx-auto min-h-[85vh] flex items-center">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
+    <section id="about" className="py-12 px-6 max-w-6xl mx-auto min-h-[80vh] flex items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center w-full">
         
         {/* Left Column: Heading, Bio, and Primary CTAs */}
         <div className="lg:col-span-7 text-left">
           {/* Availability Pill */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/60 mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 mb-4">
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
             <span className="text-xs font-semibold text-slate-300">
               AI & Deep Learning Engineer • Open to Opportunities
@@ -49,28 +49,28 @@ export default function Hero() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-100 tracking-tight leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight leading-snug mb-4">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">Varnapriya.</span><br />
             I build AI models that actually scale and perform.
           </h1>
 
           {/* Subtitle Bio */}
-          <p className="text-slate-300 text-lg sm:text-xl leading-relaxed mb-8 max-w-xl">
+          <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6 max-w-lg">
             Final-year Electronics & Instrumentation undergrad specializing in Computer Vision, ResNet-50 feature extraction, and full-stack integration with Spring Boot & React.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center gap-3">
             <a
               href="#projects"
-              className="px-6 py-3.5 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-xl transition-all shadow-lg shadow-teal-500/20 flex items-center gap-2 active:scale-95"
+              className="px-5 py-2.5 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-lg transition-all shadow-md shadow-teal-500/20 flex items-center gap-2 active:scale-95 text-sm"
             >
               Explore Projects
-              <span className="text-lg">→</span>
+              <span>→</span>
             </a>
             <a
               href="#contact"
-              className="px-6 py-3.5 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/80 text-slate-200 font-bold rounded-xl transition-all active:scale-95 flex items-center gap-2"
+              className="px-5 py-2.5 bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/80 text-slate-200 font-bold rounded-lg transition-all active:scale-95 flex items-center gap-2 text-sm"
             >
               Contact Me
             </a>
@@ -79,7 +79,7 @@ export default function Hero() {
 
         {/* Right Column: Link Cards */}
         <div className="lg:col-span-5 flex flex-col gap-3">
-          <div className="text-xs font-semibold text-slate-400 tracking-wider uppercase mb-1 text-left sm:text-center lg:text-left">
+          <div className="text-xs font-semibold text-slate-400 tracking-wider uppercase mb-1 text-left">
             Find me on
           </div>
 
@@ -89,14 +89,14 @@ export default function Hero() {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between p-4 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-700/80 transition-all shadow-sm hover:shadow-md"
+              className="group flex items-center justify-between p-3.5 rounded-xl bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-700/80 transition-all shadow-sm"
             >
-              <div className="flex items-center gap-3.5 min-w-0">
-                <div className="p-2.5 rounded-lg bg-slate-800/90 border border-slate-700/50 group-hover:bg-slate-700/60 transition-colors">
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="p-2 rounded-lg bg-slate-800/90 border border-slate-700/50 group-hover:bg-slate-700/60 transition-colors">
                   {item.icon}
                 </div>
                 <div className="text-left truncate">
-                  <span className="block text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+                  <span className="block text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                     {item.platform}
                   </span>
                   <span className="block text-sm font-semibold text-slate-200 truncate">
@@ -105,7 +105,7 @@ export default function Hero() {
                 </div>
               </div>
 
-              <span className="text-slate-400 group-hover:text-slate-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-lg font-light ml-2">
+              <span className="text-slate-400 group-hover:text-slate-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all text-base font-light ml-2">
                 ↗
               </span>
             </a>
