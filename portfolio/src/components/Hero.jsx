@@ -44,19 +44,19 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 mb-4">
             <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
             <span className="text-xs font-semibold text-slate-300">
-              Software & AI Engineer • Open to Opportunities
+              Software & Full-Stack Engineer • Open to Opportunities
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-100 tracking-tight leading-snug mb-4">
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">Varnapriya.</span><br />
-            I build intelligent AI models and full-stack web systems.
+            I develop scalable full-stack applications and intelligent web solutions.
           </h1>
 
           {/* Subtitle Bio */}
           <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-6 max-w-lg">
-            Software engineer specializing in Computer Vision, ResNet-50 deep learning pipelines, Spring Boot REST APIs, and modern React user interfaces.
+            Software engineer skilled in React interfaces, Java Spring Boot REST APIs, relational databases, and integrating computer vision pipelines into production software.
           </p>
 
           {/* CTA Buttons */}
